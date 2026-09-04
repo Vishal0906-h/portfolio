@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Animations & Transitions - Japanese Zen & Shoji Fluidity
+   ========================================================================== */
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes hankoStamp {
+  0% {
+    transform: scale(0.9) rotate(-4deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.08) rotate(1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Scroll Reveal Classes (IntersectionObserver Driven) */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays for child elements */
+.reveal-stagger-1 {
+  transition-delay: 0.08s;
+}
+
+.reveal-stagger-2 {
+  transition-delay: 0.16s;
+}
+
+.reveal-stagger-3 {
+  transition-delay: 0.24s;
+}
+
+.reveal-stagger-4 {
+  transition-delay: 0.32s;
+}
+
+.reveal-stagger-5 {
+  transition-delay: 0.40s;
+}
+
+.reveal-stagger-6 {
+  transition-delay: 0.48s;
+}
+
+/* Hero entrance initial state */
+.hero-badge-container {
+  animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-name {
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.1s backwards;
+}
+
+.hero-title {
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s backwards;
+}
+
+.hero-bio {
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards;
+}
+
+.hero-cta-group {
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.4s backwards;
+}
+
+.hero-quick-meta {
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s backwards;
+}
+
+/* Smooth Interactive Micro-Animations */
+.btn-primary,
+.btn-secondary,
+.btn-github-source {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after,
+.btn-secondary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: none;
+}
+
+.btn-primary:hover::after,
+.btn-secondary:hover::after {
+  left: 150%;
+  transition: left 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Interactive Card subtle 3D lift */
+.project-card,
+.skill-category-card,
+.cert-card,
+.education-card,
+.about-card {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

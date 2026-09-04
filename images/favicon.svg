@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <filter id="inkBleed" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <!-- Japanese Hanko / Inkan Vermilion Artist Seal -->
+  <rect x="4" y="4" width="56" height="56" rx="8" fill="#c2362b" filter="url(#inkBleed)"/>
+  <rect x="7" y="7" width="50" height="50" rx="6" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+  <!-- VT Monogram Calligraphy Stamp -->
+  <text x="32" y="43" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Songti SC', serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-1px">VT</text>
+</svg>

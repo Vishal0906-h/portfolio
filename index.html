@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vishal Tore | Aspiring Software & AI Engineer</title>
+  <meta name="description" content="Personal portfolio of Vishal Tore — Aspiring Software & AI Engineer. Hands-on experience in full-stack web applications, deep learning systems, and applied cybersecurity.">
+  <meta name="author" content="Vishal Tore">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Fixed Multi-Layer Japanese Wallpaper Background Container -->
+  <div class="site-bg-container" aria-hidden="true">
+    <div class="site-bg-layer active" data-bg-theme="sakura" style="background-image: url('images/bg-sakura.jpg');"></div>
+    <div class="site-bg-layer" data-bg-theme="temple" style="background-image: url('images/bg-temple.jpg');"></div>
+    <div class="site-bg-layer" data-bg-theme="bamboo" style="background-image: url('images/bg-bamboo.jpg');"></div>
+    <div class="site-bg-layer" data-bg-theme="wave" style="background-image: url('images/bg-wave.jpg');"></div>
+    <div class="site-bg-layer" data-bg-theme="imperial" style="background-image: url('images/bg-imperial.jpg');"></div>
+    <div class="site-bg-layer" data-bg-theme="library" style="background-image: url('images/bg-library.jpg');"></div>
+    <div class="site-bg-overlay"></div>
+  </div>
+
+  <!-- =========================================================================
+       Navigation Header (Apple Frosted Glass Sticky Bar)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Vishal Tore Home">
+        <div class="nav-brand-icon" aria-hidden="true">VT</div>
+        <span>Vishal Tore</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <!-- Mobile-Only Drawer Content (Strictly hidden on desktop) -->
+        <div class="mobile-drawer-content">
+          <a href="assets/Vishal_Tore_Resume.pdf" download class="btn-primary mobile-drawer-resume trigger-resume-download">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+
+          <div class="mobile-theme-section">
+            <div class="mobile-theme-title">Atmosphere Theme</div>
+            <div class="mobile-theme-grid">
+              <button type="button" class="mobile-theme-btn active" data-set-theme="sakura">🌸 Sakura</button>
+              <button type="button" class="mobile-theme-btn" data-set-theme="temple">⛩️ Temple</button>
+              <button type="button" class="mobile-theme-btn" data-set-theme="bamboo">🎋 Bamboo</button>
+              <button type="button" class="mobile-theme-btn" data-set-theme="wave">🌊 Wave</button>
+              <button type="button" class="mobile-theme-btn" data-set-theme="imperial">👑 Imperial</button>
+              <button type="button" class="mobile-theme-btn" data-set-theme="library">📜 Library</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Action Items: Theme Drop Down Bar & Resume Button -->
+      <div class="nav-actions">
+        <!-- Japanese Atmosphere Wallpaper Theme Dropdown Bar -->
+        <div class="header-theme-dropdown-bar" id="headerThemeDropdownBar">
+          <label for="headerThemeSelect" class="header-theme-label">
+            <span class="theme-bar-icon" aria-hidden="true">🎨</span>
+            <span>Theme:</span>
+          </label>
+          <div class="header-select-wrap">
+            <select id="headerThemeSelect" class="theme-select-dropdown" aria-label="Select Theme Atmosphere">
+              <option value="sakura">🌸 Sakura Moon (夜桜満月)</option>
+              <option value="temple">⛩️ Jinja Sanctuary (宵闇神社)</option>
+              <option value="bamboo">🎋 Bamboo Dragon (竹林翠玉)</option>
+              <option value="wave">🌊 Great Wave (神奈川沖波)</option>
+              <option value="imperial">👑 Imperial Violet (紫禁皇宮)</option>
+              <option value="library">📜 Grand Library (古文書館)</option>
+            </select>
+            <svg class="select-chevron-icon" viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </div>
+        </div>
+
+        <a href="assets/Vishal_Tore_Resume.pdf" download class="nav-resume-btn trigger-resume-download" aria-label="Download Resume PDF">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button type="button" class="mobile-nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         1. HOME / HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-background-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <div class="hero-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span class="kanji-pill">求職中</span>
+              <span>• Available for Software & AI Engineering Roles</span>
+            </div>
+          </div>
+
+          <h1 class="hero-name">Vishal Tore</h1>
+          <h2 class="hero-title">Aspiring Software / AI Engineer</h2>
+
+          <p class="hero-bio">
+            Passionate developer experienced in building AI-powered web applications, full-stack systems with Python, Node.js, Express.js, Flask, and MySQL, deep learning integration, and applied cybersecurity fundamentals. Driven by designing end-to-end solutions from database schemas to polished user interfaces.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+              </svg>
+            </a>
+            <a href="assets/Vishal_Tore_Resume.pdf" download class="btn-secondary trigger-resume-download">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-meta">
+            <div class="quick-meta-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+              </svg>
+              <span>Hubli, Karnataka, India</span>
+            </div>
+            <div class="quick-meta-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 14.53l-6.84-3.73v3.42L12 21l6.84-3.78v-3.42L12 17.53z"/>
+              </svg>
+              <span>B.E. in Computer Science & Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. ABOUT SECTION
+         ======================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">自己紹介</span> • About Me</span>
+          <h2 class="section-title">Driven by Engineering Excellence</h2>
+          <p class="section-subtitle">A synthesis of AI experimentation, robust full-stack architecture, and disciplined system design.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Professional Summary Card -->
+          <div class="about-card reveal-on-scroll">
+            <h3>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+              Professional Summary
+            </h3>
+            <p>
+              Aspiring Software / AI Engineer with hands-on experience building AI-powered web applications including text-to-image generation, event management systems, and an automated interview evaluation platform.
+            </p>
+            <p>
+              Strong in full-stack development (Python, Node.js, Express.js, Flask, MySQL), deep learning integration, and applied cybersecurity fundamentals. Proven ability to design, build, and debug end-to-end systems from database schema to user-facing interface. Currently expanding skills toward production-grade AI systems.
+            </p>
+          </div>
+
+          <!-- Side Stack: Career Objective, Interests & Education Summary -->
+          <div class="about-side-stack">
+            <div class="about-card reveal-on-scroll reveal-stagger-1">
+              <h3>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+                </svg>
+                Career Objective
+              </h3>
+              <p>
+                To design, engineer, and deploy secure, high-performance, and scalable software and artificial intelligence systems that bridge complex algorithms with elegant user experiences.
+              </p>
+            </div>
+
+            <div class="about-card reveal-on-scroll reveal-stagger-2">
+              <h3>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                Core Interests
+              </h3>
+              <div class="interest-pills">
+                <span class="interest-pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M21 12a9 9 0 1 0-9 9"/></svg>
+                  Deep Learning & Diffusion
+                </span>
+                <span class="interest-pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg>
+                  Full-Stack Development
+                </span>
+                <span class="interest-pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  Cybersecurity
+                </span>
+                <span class="interest-pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/></svg>
+                  Speech & NLP Systems
+                </span>
+              </div>
+
+              <!-- Education Summary Callout -->
+              <div class="edu-summary-box">
+                <div class="degree">B.E. in Computer Science & Engineering</div>
+                <div class="institution">KLE Institute of Technology, Hubli</div>
+                <span class="cgpa-badge">CGPA: 6.63 / 10 • Expected 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. TECHNICAL SKILLS SECTION (Grouped Premium Bento Cards)
+         ======================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">専門技術</span> • Technical Skills</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core technical competencies and domain proficiencies strictly derived from engineering experience.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming Languages -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-1">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">SQL</span>
+            </div>
+          </div>
+
+          <!-- 2. Frontend -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-2">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h14v3H5z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Frontend</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">React (JSX)</span>
+              <span class="skill-pill">Bootstrap 5</span>
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- 3. Backend & Frameworks -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-3">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Backend & Frameworks</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">Express.js</span>
+              <span class="skill-pill">REST API Design</span>
+              <span class="skill-pill">Node.js</span>
+            </div>
+          </div>
+
+          <!-- 4. Databases -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-4">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 4.02 2 6.5s4.48 4.5 10 4.5 10-2.02 10-4.5S17.52 2 12 2zm0 6C8.69 8 5 6.89 5 6.5S8.69 5 12 5s7 1.11 7 1.5-3.69 1.5-7 1.5zm-10 5.5C2 16 6.48 18 12 18s10-2 10-4.5v-3.05c-2.3 1.54-6.01 2.05-10 2.05s-7.7-0.51-10-2.05v3.05zm0 5.5C2 21.5 6.48 23.5 12 23.5s10-2 10-4.5v-3.05c-2.3 1.54-6.01 2.05-10 2.05s-7.7-0.51-10-2.05v3.05z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Databases</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">SQLite</span>
+            </div>
+          </div>
+
+          <!-- 5. AI / Machine Learning -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-5">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">AI / Machine Learning</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Deep Learning</span>
+              <span class="skill-pill">Diffusion Models</span>
+              <span class="skill-pill">NLP Basics</span>
+              <span class="skill-pill">Speech Recognition (Whisper)</span>
+              <span class="skill-pill">Semantic Similarity (SBERT)</span>
+              <span class="skill-pill">HuggingFace</span>
+            </div>
+          </div>
+
+          <!-- 6. Cybersecurity -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-6">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Cybersecurity</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Applied Ethical Hacking</span>
+              <span class="skill-pill">Network Security Fundamentals</span>
+            </div>
+          </div>
+
+          <!-- 7. Tools & Platforms -->
+          <div class="skill-category-card reveal-on-scroll reveal-stagger-1">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Redis Queue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. FEATURED PROJECTS SECTION
+         (Strict Constraints: Name, Desc, Tech Stack, Key Features, View Source Code Button)
+         ======================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">実績作品</span> • Featured Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Engineered systems spanning generative diffusion models, full-stack event platforms, and multimodal AI evaluation.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Text-to-Image Generator -->
+          <article class="project-card reveal-on-scroll reveal-stagger-1">
+            <div class="project-top">
+              <h3 class="project-name">Text-to-Image Generator</h3>
+              <span class="project-date-badge">01/2026</span>
+            </div>
+
+            <p class="project-desc">
+              A web application that converts natural language text prompts into high-quality AI-generated images using diffusion model APIs, backed by an efficient asynchronous backend.
+            </p>
+
+            <div class="project-tech-stack" aria-label="Technology Stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">Diffusion Models</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+
+            <div class="project-features-container">
+              <h4 class="features-heading">Key Features</h4>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Developed a web application that converts natural language text prompts into AI-generated images using diffusion model APIs.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Designed RESTful endpoints for prompt submission, generation status polling, and image retrieval.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Built a Flask-based backend with request queuing to handle concurrent generation requests efficiently.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Implemented prompt validation and content filtering to ensure safe and relevant image outputs.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Optimized image storage and retrieval using caching and compression for faster load times.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card-action">
+              <a href="https://github.com/Vishal0906-h" target="_blank" rel="noopener noreferrer" class="btn-github-source" aria-label="View Text-to-Image Generator Source Code on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>View Source Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Event Management System -->
+          <article class="project-card reveal-on-scroll reveal-stagger-2">
+            <div class="project-top">
+              <h3 class="project-name">Event Management System</h3>
+              <span class="project-date-badge">12/2025</span>
+            </div>
+
+            <p class="project-desc">
+              A comprehensive full-stack event platform delivering end-to-end ticketing, user role segregation, real-time availability tracking, and automated administrator insights.
+            </p>
+
+            <div class="project-tech-stack" aria-label="Technology Stack">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Bootstrap 5</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+
+            <div class="project-features-container">
+              <h4 class="features-heading">Key Features</h4>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Built a full-stack event management platform supporting event creation, registration, ticketing, and attendee tracking.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Designed role-based access control for organizers, attendees, and admins with secure authentication.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Implemented real-time seat/slot availability tracking and automated email confirmations on registration.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Developed an admin dashboard with analytics on registrations, attendance, and event performance.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Used SQLite with normalized schema design for events, users, and bookings.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card-action">
+              <a href="https://github.com/Vishal0906-h" target="_blank" rel="noopener noreferrer" class="btn-github-source" aria-label="View Event Management System Source Code on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>View Source Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: AI Interview Evaluation System -->
+          <article class="project-card reveal-on-scroll reveal-stagger-3">
+            <div class="project-top">
+              <h3 class="project-name">AI Interview Evaluation System</h3>
+              <span class="project-date-badge">02/2026 – Ongoing</span>
+            </div>
+
+            <p class="project-desc">
+              An AI-powered automated interview evaluation platform supporting technical and non-technical interview tracks with speech recognition, semantic scoring, and facial monitoring.
+            </p>
+
+            <div class="project-tech-stack" aria-label="Technology Stack">
+              <span class="tech-tag">React (JSX)</span>
+              <span class="tech-tag">Whisper STT</span>
+              <span class="tech-tag">SBERT</span>
+              <span class="tech-tag">HuggingFace</span>
+              <span class="tech-tag">Redis Queue</span>
+            </div>
+
+            <div class="project-features-container">
+              <h4 class="features-heading">Key Features</h4>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Built an AI-powered automated interview evaluation platform supporting both Technical and Non-Technical interview tracks, developed as interactive React (JSX) modules.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Implemented resume parsing and AI-generated interview questions tailored to the candidate.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Integrated Whisper STT for speech transcription and filler-word analysis, and SBERT for semantic similarity scoring of candidate answers.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Applied HuggingFace emotion models for facial expression evaluation and built anti-cheat monitoring during interviews.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Used Redis Queue for asynchronous processing of speech and video analysis pipelines.</span>
+                </li>
+                <li class="feature-item">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Designed an admin dashboard with interview replay and candidate management; college engineering project, built iteratively across five modules.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card-action">
+              <a href="https://github.com/Vishal0906-h/speech_analyzer" target="_blank" rel="noopener noreferrer" class="btn-github-source" aria-label="View AI Interview Evaluation System Source Code on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>View Source Code</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. EXPERIENCE SECTION (Professional Timeline)
+         ======================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">職歴・実習</span> • Experience & Training</span>
+          <h2 class="section-title">Experience & Training</h2>
+          <p class="section-subtitle">Practical engineering immersion spanning cybersecurity vulnerability research, backend frameworks, and AI architecture.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Entry 1: Academic AI Engineering Project -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="timeline-bullet" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Lead Developer — AI Interview Evaluation System</h3>
+                <span class="timeline-period">02/2026 – Ongoing</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-org">KLE Institute of Technology, Hubli</span>
+                <span class="timeline-hours">Academic Engineering Project</span>
+              </div>
+              <p class="timeline-desc">
+                Spearheading the design and iterative development of an automated interview evaluation platform built across five modules. Orchestrating speech-to-text transcription with Whisper STT, semantic similarity scoring using SBERT, facial sentiment monitoring via HuggingFace models, and asynchronous pipeline handling with Redis Queue.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2: Cyber Security Internship -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="timeline-bullet" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Cyber Security Intern</h3>
+                <span class="timeline-period">01/2024 – 04/2024</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-org">Government Polytechnic Hubli</span>
+                <span class="timeline-hours">640 Hours Practical Training</span>
+              </div>
+              <p class="timeline-desc">
+                Completed an intensive 640-hour internship investigating cryptographic and digital signature attack surfaces. Conducted vulnerability assessments, analyzed asymmetric cryptography mechanisms, and implemented defense-in-depth protocols adhering to applied network security fundamentals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3: Express.js & MySQL Internship -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="timeline-bullet" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Backend Developer Intern (Express.js & MySQL)</h3>
+                <span class="timeline-period">01/2023 – 02/2023</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-org">CareerLake Education Pvt. Ltd.</span>
+                <span class="timeline-hours">200 Hours Hands-on</span>
+              </div>
+              <p class="timeline-desc">
+                Executed a 200-hour specialized curriculum and practical backend project using Express.js and MySQL. Designed normalized database schemas, built secured REST API endpoints with middleware validation, and optimized query transactions for low-latency web services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. EDUCATION SECTION (Modern Timeline Cards)
+         ======================================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">学歴</span> • Education</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Formal foundation in Computer Science and Engineering with rigorous coursework in core software disciplines.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1: Bachelor of Engineering -->
+          <div class="education-card reveal-on-scroll reveal-stagger-1">
+            <div class="education-top">
+              <span class="education-badge">Undergraduate Degree</span>
+              <span class="education-year">Expected 07/2027</span>
+            </div>
+            <h3 class="education-degree">Bachelor of Engineering in Computer Science and Engineering</h3>
+            <div class="education-institution">KLE Institute of Technology, Hubli</div>
+            <div class="education-cgpa-row">
+              <span class="cgpa-label">Cumulative GPA</span>
+              <span class="cgpa-value">6.63 / 10</span>
+            </div>
+          </div>
+
+          <!-- Degree 2: Diploma in Computer Science -->
+          <div class="education-card reveal-on-scroll reveal-stagger-2">
+            <div class="education-top">
+              <span class="education-badge">Technical Diploma</span>
+              <span class="education-year">10/2021 – 06/2024</span>
+            </div>
+            <h3 class="education-degree">Diploma in Computer Science</h3>
+            <div class="education-institution">Government Polytechnic, Hubli</div>
+            <div class="education-cgpa-row">
+              <span class="cgpa-label">Cumulative GPA</span>
+              <span class="cgpa-value">8.30 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. CERTIFICATIONS SECTION (Refined Cards)
+         ======================================================================= -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">認定資格</span> • Certifications</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Verified technical certifications and credentials across software development, AI, and cybersecurity.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card reveal-on-scroll reveal-stagger-1">
+            <div class="cert-top">
+              <div class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              </div>
+              <span class="cert-year">2024</span>
+            </div>
+            <h3 class="cert-name">Cyber Security Internship (640 hrs, Project: Digital Signature Attacks)</h3>
+            <div class="cert-org">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              <span>Government Polytechnic Hubli</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card reveal-on-scroll reveal-stagger-2">
+            <div class="cert-top">
+              <div class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+              </div>
+              <span class="cert-year">2023</span>
+            </div>
+            <h3 class="cert-name">Internship in Express.js & MySQL (200 hrs)</h3>
+            <div class="cert-org">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              <span>CareerLake Education Pvt. Ltd.</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card reveal-on-scroll reveal-stagger-3">
+            <div class="cert-top">
+              <div class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"/></svg>
+              </div>
+              <span class="cert-year">10/2023</span>
+            </div>
+            <h3 class="cert-name">Cyber Security and Applied Ethical Hacking</h3>
+            <div class="cert-org">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              <span>Infosys Springboard</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card reveal-on-scroll reveal-stagger-4">
+            <div class="cert-top">
+              <div class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>
+              </div>
+              <span class="cert-year">04/2026</span>
+            </div>
+            <h3 class="cert-name">Java Essentials</h3>
+            <div class="cert-org">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              <span>Infosys Springboard</span>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card reveal-on-scroll reveal-stagger-5">
+            <div class="cert-top">
+              <div class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9z"/></svg>
+              </div>
+              <span class="cert-year">12/2025</span>
+            </div>
+            <h3 class="cert-name">Artificial Intelligence Fundamentals</h3>
+            <div class="cert-org">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+              <span>IBM SkillsBuild</span>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card reveal-on-scroll reveal-stagger-6">
+            <div class="cert-top">
+              <div class="cert-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+              </div>
+              <span class="cert-year">02/2026</span>
+            </div>
+            <h3 class="cert-name">MY Bharat Budget Quest 2026</h3>
+            <div class="cert-org">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              <span>Ministry of Youth Affairs & Sports</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. CONTACT SECTION
+         ======================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><span class="kanji-label">連絡先</span> • Contact</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Let's discuss opportunities in software engineering, AI systems, and full-stack development.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left: Direct Channels Card -->
+          <div class="contact-info-card reveal-on-scroll">
+            <h3>Let's Connect</h3>
+            <p>I am actively seeking software engineering and AI engineering roles. Feel free to reach out directly via email, phone, or LinkedIn.</p>
+
+            <div class="contact-channels">
+              <!-- Email -->
+              <div class="contact-channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Email</div>
+                    <a href="mailto:vishaltore123456@gmail.com" class="channel-value">vishaltore123456@gmail.com</a>
+                  </div>
+                </div>
+                <button type="button" class="channel-action-btn" data-copy="vishaltore123456@gmail.com" aria-label="Copy Email to Clipboard">
+                  Copy
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Phone</div>
+                    <a href="tel:+919591050952" class="channel-value">+91 9591050952</a>
+                  </div>
+                </div>
+                <button type="button" class="channel-action-btn" data-copy="+919591050952" aria-label="Copy Phone Number to Clipboard">
+                  Copy
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63z"/></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/vishal-tore-hv0906" target="_blank" rel="noopener noreferrer" class="channel-value">vishal-tore-hv0906</a>
+                  </div>
+                </div>
+                <a href="https://www.linkedin.com/in/vishal-tore-hv0906" target="_blank" rel="noopener noreferrer" class="channel-action-btn" aria-label="Open LinkedIn Profile">
+                  Visit
+                </a>
+              </div>
+
+              <!-- GitHub Profile -->
+              <div class="contact-channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">GitHub</div>
+                    <a href="https://github.com/Vishal0906-h" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/Vishal0906-h</a>
+                  </div>
+                </div>
+                <a href="https://github.com/Vishal0906-h" target="_blank" rel="noopener noreferrer" class="channel-action-btn" aria-label="Open GitHub Profile">
+                  Visit
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Resume & Quick Overview CTA Card -->
+          <div class="contact-cta-card reveal-on-scroll reveal-stagger-2">
+            <div class="cta-avatar-ring" aria-hidden="true">VT</div>
+            <h4>Vishal Tore</h4>
+            <p>Software & AI Engineer candidate with a strong foundation in full-stack web platforms, machine learning pipelines, and cybersecurity.</p>
+            <a href="assets/Vishal_Tore_Resume.pdf" download class="btn-primary trigger-resume-download" style="width: 100%; justify-content: center;">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              <span>Download Official Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>Vishal Tore</h4>
+          <p>Aspiring Software & AI Engineer • Hubli, Karnataka, India</p>
+        </div>
+
+        <div class="footer-social-links" aria-label="Social and Contact Profiles">
+          <!-- GitHub -->
+          <a href="https://github.com/Vishal0906-h" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/vishal-tore-hv0906" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63z"/></svg>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:vishaltore123456@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+919591050952" class="social-icon-btn" aria-label="Call Phone" title="Phone">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vishal Tore. All rights reserved.</div>
+        <div>Designed with Apple-inspired minimalist aesthetic.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Floating Back-to-Top Button
+       ========================================================================= -->
+  <button type="button" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </button>
+
+  <!-- =========================================================================
+       Toast Notification
+       ========================================================================= -->
+  <div class="toast-container" aria-live="polite">
+    <div class="toast" role="status">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
+      <span class="toast-message">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/animations.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
