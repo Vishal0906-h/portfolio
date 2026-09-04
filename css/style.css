@@ -1297,6 +1297,9 @@ img, svg {
   margin-top: auto;
   padding-top: 20px;
   border-top: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .btn-github-source {
@@ -1305,12 +1308,12 @@ img, svg {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 12px 20px;
+  padding: 11px 20px;
   border-radius: var(--radius-full);
   background: var(--pill-bg);
   border: 1px solid var(--pill-border);
   color: var(--text-primary);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 600;
   transition: var(--transition-fast);
 }
@@ -1324,6 +1327,34 @@ img, svg {
 }
 
 .btn-github-source svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.btn-live-demo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 20px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+  box-shadow: 0 3px 12px var(--accent-glow);
+}
+
+.btn-live-demo:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0 6px 20px var(--accent-glow);
+  transform: translateY(-1px);
+}
+
+.btn-live-demo svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
